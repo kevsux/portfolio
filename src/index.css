@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&family=Karla:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Sono:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+  outline: none;
+}
+html{
+    background: #e7e7d6;
+}
+
+.animated-profile{
+  animation: profile 10s ease-in-out infinite;
+}
+@keyframes profile {
+  0%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50%{
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
